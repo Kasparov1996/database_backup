@@ -7,7 +7,7 @@
 			if(PHP_OS !== 'Linux') {
 				die("This script must be run in GNU/Linux Operation System, sorry about that\n");
 			}	else {
-				echo $this->colorize('green',"[!] DB-Toolkit beta 0.1 [!]\n\n");
+				echo $this->colorize('green',"[!] DB Backup [!]\n\n");
 				if(function_exists('mysqli_init') && extension_loaded('mysqli')) {
 					($_SERVER['argc'] == 1) ? $this->getHelp() : $this->main();
 				} else {
